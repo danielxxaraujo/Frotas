@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="FrotaPersistencia" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Dados.FrUsuario</class>
+    <class>Dados.FrVeiculo</class>
+    <class>Dados.FrValor</class>
+    <class>Dados.FrDiaria</class>
+    <class>Dados.FrTrajeto</class>
+    <class>Dados.FrPrefeitura</class>
+    <class>Dados.FrPecas</class>
+    <class>Dados.FrServicos</class>
+    <class>View.VFrPecas</class>
+    <class>View.VFrServicosPecas</class>
+    <class>View.VFrServicos</class>
+    <class>View.VFrVeiculo</class>
+    <class>View.VFrUsuario</class>
+    <class>View.VFrDiariaCategoria</class>
+    <class>View.VFrDiaria</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/municipal"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="creative"/>
+    </properties>
+  </persistence-unit>
+</persistence>
